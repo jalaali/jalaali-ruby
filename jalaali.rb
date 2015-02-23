@@ -103,7 +103,7 @@ end
   # @return Julian Day number
 def j2d(jy, jm, jd)
   r = jalCal(jy)
-  g2d(r.gy, 3, r[:march]) + (jm - 1) * 31 - div(jm, 7) * (jm - 7) + jd - 1
+  g2d(r[:gy], 3, r[:march]) + (jm - 1) * 31 - div(jm, 7) * (jm - 7) + jd - 1
 end
 
   # Converts the Julian Day number to a date in the Jalaali calendar.
